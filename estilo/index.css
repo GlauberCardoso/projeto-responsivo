@@ -9,8 +9,21 @@ header {
     background-color: #171846;
 }
 
+.logo {
+    width: 10rem;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #171846;
+}
+
 #navbarNav {
     justify-content: right;
+}
+
+.navbar-toggler {
+    flex-wrap: nowrap;
 }
 
 .nav-item {
@@ -37,6 +50,10 @@ header {
     font-weight: 400;
 }
 
+.navbar-toggler {
+    border-color: white;
+}
+
 .nav-link {
     color: white;
 }
@@ -50,4 +67,37 @@ header {
 
 body {
     background-color: rgb(151, 216, 216);
+}
+
+.img-languages:hover {
+    scale: 110%;
+}
+
+.languages {
+    margin-top: -50px;
+}
+
+.search {
+    margin-top: -35px;
+}
+
+.btn-search:hover {
+    background-color: black;
+}
+
+.section-video {
+    border: 2px solid black;
+    height: 100vh;
+}
+
+.section-depoimentos {
+    border: 2px solid black;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    .search {
+        display: block;
+        flex-wrap: wrap;
+    }
 }
