@@ -99,5 +99,6 @@ body {
     .search {
         display: block;
         flex-wrap: wrap;
+        size: -20px;
     }
 }
