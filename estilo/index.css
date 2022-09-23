@@ -84,6 +84,7 @@ body {
 
 .video-banner {
     position: relative;
+    max-height: 100%;
 }
 
 .video {
@@ -92,28 +93,90 @@ body {
     max-width: 100%;
 }
 
-.marketing-description {
+.video-banner .marketing-description {
     position: absolute;
     background-color: rgba(55, 118, 201, 0.514);
     color: white;
-    width: 500px;
-    max-height: 100%;
-    min-height: 100%;
+    max-width: 600px;
+    height: 99.2%;
     top: 0;
+    bottom: 0;
+}
+
+.marketing-titulo {
+    margin: 20px 20px;
+}
+
+.marketing-subtitulo {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .cadastre-se > a > p{
     position: absolute;
-    margin: 0px;
     background-color: #FF7D00;
     border-radius: 20px;
-    padding: 10px 60px;
+    padding: 20px 100px;
+    margin-left: 120px;
     text-decoration: none;
     color: white;
+    font-size: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
 }
 
 .cadastre-se > a > p:hover {
     scale: 110%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
+}
+
+@media screen and (min-width: 200px) and (max-width: 540px) {
+    .cadastre-se > a > p {
+        padding: 10px 70px;
+        margin-left: 120px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 740px) {
+    .marketing-titulo {
+        margin-top: 50px
+    }
+
+    .marketing-subtitulo {
+        margin-top: 10px
+    }
+    
+    .cadastre-se > a > p {
+        padding: 10px 70px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 741px) and (max-width: 1000px) {
+    .marketing-titulo {
+        margin-top: 50px
+    }
+
+    .marketing-subtitulo {
+        margin-top: 10px
+    }
+    
+    .cadastre-se > a > p {
+        padding: 10px 70px;
+        margin-top: 120px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 2080px) {
+    .marketing-titulo {
+        margin-top: 50px
+    }
+
+    .marketing-subtitulo {
+        margin-top: 50px
+    }
+    
+    .cadastre-se > a > p {
+        margin-top: 150px
+    }
 }
