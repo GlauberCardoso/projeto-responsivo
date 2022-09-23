@@ -95,12 +95,11 @@ body {
 .marketing-description {
     position: absolute;
     background-color: rgba(55, 118, 201, 0.514);
+    color: white;
     width: 500px;
     max-height: 100%;
     min-height: 100%;
     top: 0;
-    left: 0;
-    bottom: 0;
 }
 
 .cadastre-se > a > p{
