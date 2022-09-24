@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo/index.css">
+    <link rel="stylesheet" href="estilo/media-queries.css">
     <link rel="shortcut icon" href="assets/favicon/icone-logo-azul.PNG" type="image/x-icon">
     <title>MGM English</title>
 </head>
@@ -64,7 +66,10 @@
         <video class="video" src="assets/videos/video-body.mp4" autoplay muted preload="auto" loop>
           
         </video>
-        <div class="marketing-description">
+        <div class="marketing-description" data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000">
           <h1 class="marketing-titulo">
             MGM English Online. <br>
             Estude de onde estiver, 100% Digital.
@@ -85,7 +90,9 @@
     </section>
 
     <section id="depoimentos">
-      <h1>Depoimentos</h1>
+      <h1 data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">Depoimentos</h1>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -119,7 +126,9 @@
     </section>
 
     <section id="faq">
-      <h1>Perguntas Frequentes.</h1>
+      <h1 data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">Perguntas Frequentes.</h1>
       <div class="accordion" id="accordionExample">
 
         <div class="accordion-item">
@@ -190,6 +199,71 @@
       </div>
     </section>
 
+    <section id="contact" data-aos="fade-up"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="300"
+    data-aos-duration="3000">
+      <h1 data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">Entrar em Contato!</h1>
+      <h2>Gostaríamos de ajudá-lo a iniciar sua jornada com a MGM Online.</h2>
+      <form action="" method="post">
+          <label for="inome">Nome Completo <span style="color: red;">*</span></label><br>
+          <input type="text" id="inome" placeholder="Nome" required size="80">
+          <p></p>
+
+          <label for="iemail">Email <span style="color: red;">*</span></label><br>
+          <input type="email" id="iemail" placeholder="Email" required size="80">
+          <p></p>
+
+          <label for="ipais">País <span style="color: red;">*</span></label><br>
+          <input type="text" id="ipais" placeholder="Digite o nome do seu país" required size="80">
+          <p></p>
+
+          <label for="imsg">Mensagem <span style="color: red;">*</span></label><br>
+          <textarea id="imsg" placeholder=" Mensagem..." rows="10" cols="85" required></textarea>
+          <p></p>
+          <label for="itemselect">Como você ficou sabendo sobre nós?</label>
+          <p>
+              <select name="item" id="itemselect">
+                  <option value="Select">- Selecione -</option>
+                  <option value="Google">Google</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Youtube">Youtube</option>
+                  <option value="A/P">Agência/Parceiro</option>
+                  <option value="A/C">Amigo/Colega</option>
+                  <option value="Outros">Outros</option>
+              </select>
+          </p>
+          <p>
+              <input type="checkbox" name="check" id="termo-privacidade" required>
+              <label for="termo-privacidade">Li e concordo com a <a href="#">Termos e Condições</a> e <a href="#">Política de Privacidade</a> <span style="color: red;">*</span></label><br>
+          </p>
+          <p></p>
+              <div class="enviar-formulario">
+                  <button type="submit">Enviar formulário</button>
+              </div>
+      </form>
+  </section>
+
+
+    <a href="https://api.whatsapp.com/send?phone=5511963803721&text=Ol%C3%A1!%20Obrigado%20por%20escolher%20a%20MGM%20English%20Online!%20Em%20que%20podemos%20ajudar%3F" target="_blank">
+      <button id="whatsapp" onclick="chamarAtendimento()">
+        <img src="assets/img/icons8-whatsapp-48.png" alt="Símbolo de seta apontando para cima">
+      </button>
+    </a>
+
+    <button id="botao-topo" onclick="voltarParaTopo()">
+      <img src="assets/img/arrow-up.png" alt="Símbolo de seta apontando para cima">
+    </button>
+
+    <footer>
+      Site desenvolvido por <a href="https://github.com/GlauberCardoso">Glauber</a>, <a href="https://github.com/JessanyKaline">Jessany</a> e <a href="https://github.com/MarcosLiborio">Marcos</a> e <a href="https://github.com/MikeVitdev">Michael</a> - Projeto da Escola <a href="https://http://somostera.com/">TERA</a> - Plataforma Educacional.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

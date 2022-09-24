@@ -145,7 +145,7 @@ section#depoimentos > h1 {
     text-align: center;
     font-size: 3em;
     color: #FF7D00;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
     padding-top: 100px;
 }
 
@@ -183,6 +183,8 @@ section#depoimentos img {
 
 #faq h1 {
     padding-bottom: 50px;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
 }
 
 #faq .accordion-button {
@@ -214,80 +216,119 @@ section#depoimentos img {
     color: white;
 }
 
-@media screen and (max-width: 280px) {
-    .marketing-titulo {
-        font-size: 12px;
-    }
-
-    .marketing-subtitulo {
-        font-size: 12px;
-    }
-    
-    .cadastre-se > a > p {
-        font-size: 12px;
-        padding: 5px 50px;
-        margin: 2px 20px;
-    }
+section#contact {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
 }
 
-@media screen and (min-width: 281px) and (max-width: 440px) {
-    .marketing-titulo {
-        font-size: 12px;
-    }
-
-    .marketing-subtitulo {
-        font-size: 12px;
-    }
-    
-    .cadastre-se > a > p {
-        font-size: 12px;
-        padding: 5px 50px;
-        margin: 2px 20px;
-    }
+section#contact form {
+    max-width: 100%;
+    height: auto;
 }
 
-@media screen and (min-width: 441px) and (max-width: 740px) {
-    .marketing-titulo {
-        margin-top: 50px;
-        font-size: 16px;
-    }
-
-    .marketing-subtitulo {
-        margin-top: 10px;
-        font-size: 16px;
-    }
-    
-    .cadastre-se > a > p {
-        padding: 10px 70px;
-        margin: 20px 10px;
-    }
+#contact h1{
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 3em;
+    color: #FF7D00;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
 }
 
-@media screen and (min-width: 741px) and (max-width: 1000px) {
-    .marketing-titulo {
-        margin-top: 50px;
-    }
-
-    .marketing-subtitulo {
-        margin-top: 10px;
-    }
-    
-    .cadastre-se > a > p {
-        padding: 10px 70px;
-        margin-top: 120px;
-    }
+#contact h2 {
+    width: 100%;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    color: rgb(23, 24, 70);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
 }
 
-@media screen and (min-width: 1001px) and (max-width: 2080px) {
-    .marketing-titulo {
-        margin-top: 50px;
-    }
+#contact form input {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 0.5px;
+    padding: 10px;
+}
 
-    .marketing-subtitulo {
-        margin-top: 50px;
-    }
-    
-    .cadastre-se > a > p {
-        margin-top: 150px;
-    }
+#contact form textarea {
+    max-width: 100%;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#contact form select {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    width: 650px;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.enviar-formulario > button {
+    max-width: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    padding: 10px 15px; 
+    background-color: #FF7D00; 
+    color: white; 
+    border: 0px;
+    border-radius: 20px; 
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-size: 1.1em;
+}
+
+.enviar-formulario > button:hover {
+    cursor: pointer;
+    background-color: #ff7b00b2;
+    scale: 95%;
+}
+
+footer {
+    background-color: rgb(23, 24, 70);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    position: relative;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#botao-topo {
+    background: #FF7D00;
+    border: none;
+    bottom: 20px; 
+    cursor: pointer;
+    display: none;
+    outline: none;
+    padding: 5px;
+    position: fixed; 
+    right: 30px; 
+    z-index: 99;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+#botao-topo img {
+    height: 40px;
+    width: 40px;
+}
+
+#whatsapp {
+    background: none;
+    border: none;
+    bottom: 120px;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    z-index: 200;
+    padding: 15px;
+    position: fixed; 
+    right: 30px; 
 }
